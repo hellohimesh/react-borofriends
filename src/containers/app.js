@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
-import {robots} from './robots';
-import CardList from './cardlist';
-import Searchbox from './searchbox';
+import CardList from '../components/cardlist';
+import Searchbox from '../components/searchbox';
 
 
 class App extends Component{
@@ -28,7 +27,7 @@ componentDidMount(){
     const filterCopy = this.state.robots.filter(robot=>{
       return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase());
     })
-    if(this.state.robots.length == 0){
+    if(this.state.robots.length === 0){
       return <h1> Loading .. </h1>
     }
     else {

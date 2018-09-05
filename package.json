@@ -15,5 +15,6 @@
   },
   "devDependencies": {
     "tachyons": "^4.10.0"
-  }
+  },
+  "homepage" : "http://localhost/react-crud/build/"
 }
